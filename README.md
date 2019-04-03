@@ -21,7 +21,7 @@ This repository contains ==>
     * Input the complete path of CSV file containing the list of projects to be onboarded in the projects field of [configuration file](/config.yml)
      
      
-  > Prerequisites: ( [An example](/example/prerequisite.md))
+  **Prerequisites:**(A service account with required roles)([An example](/example/prerequisite.md))
      1. Enable access to few API's in API library for project: 
            * For all projects to be onboarded, navigate to API & Services > Library and enable Cloud Resource Manager API, Compute Engine API, Kubernetes Engine API and Cloud SQL Admin API from the API library. 
 
@@ -41,7 +41,7 @@ This repository contains ==>
 #### Get started 
   * Making the choice of deployment mode ``` All Projects in an organization or Multiple Projects within the organization ```
   
-  * Preparing the configuration file ( [An example](/example/config.yml))
+  * Preparing the configuration file ([An example](/example/config.yml))
       * _username: "Qualys username to call CloudView API"_
       * _password: "Qualys password to call CloudView API"_
       * _apiURL: "Qualys baseurl for CloudView API"_
@@ -49,7 +49,7 @@ This repository contains ==>
       * _projects: "Either the CSV containing list of projectIds or **all**"_
       * _debug: true/false_
       
-  * Preparing the csv file if deployment mode is not all the projects in an organization ( [An example](/example/gcp-projectids.csv))
+  * Preparing the csv file if deployment mode is not all the projects in an organization ([An example](/example/gcp-projectids.csv))
   
       ProjectId |
       ---------|
