@@ -34,6 +34,7 @@ This repository contains ==>
       * _debug: true/false_
       
   * preparing the csv file if deployment mode is not all the projects in an organization ( [An example](/example/gcp-projectids.csv))
+  
       ProjectId |
       ---------|
       mikeshproject|
