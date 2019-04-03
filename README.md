@@ -6,11 +6,21 @@ _**THIS SCRIPT IS PROVIDED TO YOU "AS IS."  TO THE EXTENT PERMITTED BY LAW, QUAL
 ## Description
 The aim of this repository is to build a solution which will help you onboard multiple projects or all projects within an organization to Qualys CloudView. We have built a python program which will perform this solution.
 
-> Deployment Options
+### Deployment Options
 * **An Organization** : To onboard **all** the projects in an organization
     * Input ```"all"``` in the projects field of [configuration file](/config.yml)
     
-    > Prerequisites
+* **Multiple Projects within an organization** : To onboard selected projects within an organization
+    * Input the complete path of CSV file containing the list of projects to be onboarded in the projects field of [configuration file](/config.yml)
+    
+This repository contains ==>
+
+  1. [**Main Python Program**](/gcp-cv-connector.py) 
+  2. [**configuration File**](/example/config.yml)
+  3. [**CSV with list of ProjectIds**](/example/gcp-projectids.csv)
+  4. [**Demo-Key**](/example/demokey.json) 
+  
+    > Prerequisites:
 
       1. Enable access to few API's in API library for project: 
             * For all projects to be onboarded, navigate to API & Services > Library and enable Cloud Resource Manager API, Compute Engine API, Kubernetes Engine API and Cloud SQL Admin API from the API library. 
@@ -25,17 +35,7 @@ The aim of this repository is to build a solution which will help you onboard mu
             * Click on ADD tab 
             * Paste the service account email address in the New member field 
             * Add roles mentioned above in the Role field and click on CONTINUE 
-  
-* **Multiple Projects within an organization** : To onboard selected projects within an organization
-    * Input the complete path of CSV file containing the list of projects to be onboarded in the projects field of [configuration file](/config.yml)
-
-This repository contains ==>
-
-  1. [**Main Python Program**](/gcp-cv-connector.py) 
-  2. [**configuration File**](/example/config.yml)
-  3. [**CSV with list of ProjectIds**](/example/gcp-projectids.csv)
-  4. [**Demo-Key**](/example/demokey.json)
-  
+            
 ## Usage
 
 #### Get started 
