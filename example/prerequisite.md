@@ -4,8 +4,9 @@
 
 2. Create a service account in any project and download a configuration file: 
       * Navigate to IAM & admin > Service accounts and click CREATE SERVICE ACCOUNT. Provide a name and description (optional) for the service account and click CREATE. 
+![Image5](/example/images/5.png)![Image6](/example/images/6.png)![Image7](/example/images/7.png)
       * Click CREATE KEY.  Select JSON as Key type and click CREATE. A message saying “Private key saved to your computer” is displayed and the JSON file is downloaded to your computer. Click CLOSE and then click DONE. 
-
+![Image8](/example/images/8.png)![Image9](/example/images/9.png)
 3. Attach role (Resource Manager -> Organization Viewer, Folder Viewer, Project Viewer and    IAM -> Security Reviewer) to the Service account created in step1: 
       * Navigate to Organization 
       * Navigate to IAM & admin > IAM 
