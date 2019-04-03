@@ -11,7 +11,7 @@ This repository contains ==>
   1. [**Main python program**](/gcp-cv-connector.py) 
   2. [**Configuration file**](/example/config.yml)
   3. [**CSV with list of projectids**](/example/gcp-projectids.csv)
-  4. [**Demokey**](/example/demokey.json) 
+  4. [**Demo key**](/example/demokey.json) 
 
 ## Deployment Options
 * **An Organization** : To onboard **all** the projects in an organization
@@ -22,7 +22,7 @@ This repository contains ==>
 
 
      
-    **Prerequisites:**(A service account with required roles)([An example](/example/prerequisite.md))
+    **Prerequisites:**(A service account with required roles) ([An example](/example/prerequisite.md))
     
        1. Enable access to few API's in API library for project: 
              * For all projects to be onboarded, navigate to API & Services > Library and enable Cloud Resource Manager API, Compute Engine API, Kubernetes Engine API and Cloud SQL Admin API from the API library. 
