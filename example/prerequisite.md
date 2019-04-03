@@ -1,6 +1,6 @@
 1. Enable access to few API's in API library for project:
      * For all projects to be onboarded, navigate to API & Services > Library and enable Cloud Resource Manager API, Compute Engine API, Kubernetes Engine API and Cloud SQL Admin API from the API library. 
-![Image1](/example/images/1.png) ![Image3](/example/images/2.png) ![Image3](/example/images/3.png)
+![Image1](/example/images/1.png) ![Image3](/example/images/2.png) ![Image3](/example/images/3.png)![Image4](/example/images/4.png)
 
 2. Create a service account in any project and download a configuration file: 
       * Navigate to IAM & admin > Service accounts and click CREATE SERVICE ACCOUNT. Provide a name and description (optional) for the service account and click CREATE. 
