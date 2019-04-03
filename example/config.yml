@@ -1,0 +1,7 @@
+defaults:
+  username: "quays_mk99"
+  password: "Password@Qualys"
+  apiURL: "https://qualysguard.qualys.com"
+  keyfile: "C:\\Users\\mkhanal\\Desktop\\Automations\\GCP Connector\\mikeshSA-GCP.json"
+  projects: "ALL"
+  debug: true
