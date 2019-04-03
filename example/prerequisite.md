@@ -22,7 +22,7 @@
 ![Image7](/example/images/7.png)
 
 
-    * Click CREATE KEY.Select JSON as Key type and click CREATE. A message saying “Private key saved to your computer” is displayed and the JSON file is downloaded to your computer. Click CLOSE and then click DONE. 
+   * Click CREATE KEY.Select JSON as Key type and click CREATE. A message saying “Private key saved to your computer” is displayed and the JSON file is downloaded to your computer. Click CLOSE and then click DONE. 
       
 ![Image8](/example/images/8.png)
 
