@@ -27,12 +27,16 @@ def Post_Call(username,password,URL,keyfile,data_connector):
     b64Val = base64.b64encode(usrPass)
     headers = {
         'Accept': 'application/json',
-        'content-type': 'multipart/form-data',
         'Authorization': "Basic %s" % b64Val
     }
-    with open(keyfile,"rb") as fil:
-        r = requests.post(URL, headers=headers,data=data_connector , files={keyfile: fil},verify=False)
-        print (r)
+    files = {
+        'configFile': (keyfile, open(keyfile, 'rb')),
+    } 
+    try:
+        r = requests.post(URL, headers=headers,data=data_connector , files=files,verify=False)
+        #print (r.json()) Enable for debugging
+    except Exception as e:
+        print (e)
     return r.raise_for_status()
 
 def Add_GCP_Connector():
@@ -61,10 +65,9 @@ def Add_GCP_Connector():
 
     counter=0   
     for project in abc:
-        print project
         with open(keyfile,"r") as fil:
             json_data = json.load(fil)
-            json_data['project_id'] = project
+            json_data['project_id'] = project.strip('\"')
         with open(keyfile,"w") as fil:
             json.dump(json_data, fil, indent=2)
         counter += 1
